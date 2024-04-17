@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: all ease-in-out 0.2s;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.header {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 460px) {
+  .header {
+    font-size: 25px;
+  }
+}
+
+.temp-container {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  gap: 10px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px lightgray;
+  font-family: "Poppins", sans-serif;
+}
+@media (max-width: 460px) {
+  .temp-container {
+    width: 300px;
+  }
+}
+.temp-container .temp {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px 10px;
+  width: 100%;
+}
+.temp-container .temp label {
+  flex: 1;
+  font-size: 23px;
+}
+@media (max-width: 460px) {
+  .temp-container .temp label {
+    font-size: 15px;
+  }
+}
+.temp-container .temp input {
+  padding-inline-start: 10px;
+  font-size: 15px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  height: 40px;
+}
+.temp-container .temp input:focus {
+  outline: none;
+  border-color: rgb(179, 179, 179);
+}
+.temp-container .temp input::-webkit-outer-spin-button, .temp-container .temp input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+@media (max-width: 460px) {
+  .temp-container .temp input {
+    width: 50%;
+  }
+}
+.temp-container .temp button {
+  background-color: transparent;
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  position: absolute;
+  margin: 5px;
+}
+@media (max-width: 460px) {
+  .temp-container .temp button {
+    margin: 0 5px;
+  }
+}
+.temp-container .temp button:hover {
+  background-color: dodgerblue;
+}/*# sourceMappingURL=index.css.map */
